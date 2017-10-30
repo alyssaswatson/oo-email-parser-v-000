@@ -12,6 +12,7 @@ class EmailParser
 
   def parse
     parsed_emails = emails.split(/[\s,]/)
-    parsed_emails
+    parsed_emails.delete("")
+    
   end
 end
